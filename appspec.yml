@@ -10,13 +10,13 @@ permissions:
 hooks:
   BeforeInstall:
     - location: scripts/cleanInstance.sh
-      timeout: 300
+      timeout: 50
       runas: root
-  AfterInstall:
+  AfterInstall: 50
     - location: scripts/restartServices.sh
-      timeout: 300
+      timeout: 50
       runas: root
   ApplicationStop:
     - location: scripts/restartNginx.sh
-      timeout: 300
+      timeout: 50
       runas: root
