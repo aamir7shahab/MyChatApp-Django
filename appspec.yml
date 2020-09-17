@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /new_chatapp
+    destination: /MyChatApp-Django
 permissions:
-  - object: /new_chatapp
+  - object: /MyChatApp-Django
     owner: root
     group: root
 hooks:
