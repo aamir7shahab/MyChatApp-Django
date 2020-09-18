@@ -19,6 +19,10 @@ hooks:
     - location: scripts/restartServices.sh
       timeout: 50
       runas: root
+  ApplicationStart:
+    - location: scripts/restartNginx.sh     
+      timeout: 50
+      runas: root
   ApplicationStop:
     - location: scripts/restartNginx.sh
       timeout: 50
