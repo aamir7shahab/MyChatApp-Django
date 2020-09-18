@@ -7,7 +7,10 @@ permissions:
   - object: /MyChatApp-Django
     owner: root
     group: root
-    mode: 755
+  - object: /scripts
+    pattern: "*.sh"
+    owner: root
+    mode: 775
 hooks:
   BeforeInstall:
     - location: scripts/cleanInstance.sh
