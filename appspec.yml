@@ -7,8 +7,7 @@ permissions:
   - object: /MyChatApp-Django
     owner: root
     group: root
-  - object: /scripts
-    pattern: "*.sh"
+  - object: /scripts/restartNginx.sh
     owner: root
     mode: 775
 hooks:
