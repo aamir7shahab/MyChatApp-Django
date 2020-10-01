@@ -1,2 +1,2 @@
 sudo su
-sudo rm -r /MyChatApp-Django
+sudo rm -fr /MyChatApp-Django
