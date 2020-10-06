@@ -28,7 +28,7 @@ pipeline {
         stage("Deploy") {
             steps{
                step([$class: 'AWSCodeDeployPublisher',
-                    applicationName: 'jenkinsDemo',
+                    applicationName: 'JenkinsDemo',
                     awsAccessKey: '',
                     awsSecretKey: '',
                     credentials: 'AWS credentials',
