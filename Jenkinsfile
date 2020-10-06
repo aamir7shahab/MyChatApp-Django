@@ -6,7 +6,8 @@ pipeline {
             steps {
                 withSonarQubeEnv('sonarqube-server') {
                 sh "/opt/sonar_scanner/bin/sonar-scanner \
-                -Dsonar.projectKey=PipelineTest \
+                -Dsonar.projectKey=$JOB_NAME \
+                -Dsonar.projectName=$JOB_NAMEt \
                 -Dsonar.sources=/var/lib/jenkins/workspace/$JOB_NAME"
                 }
             }
