@@ -7,7 +7,7 @@ pipeline {
                 withSonarQubeEnv('sonarqube-server') {
                 sh "/opt/sonar_scanner/bin/sonar-scanner \
                 -Dsonar.projectKey=$JOB_NAME \
-                -Dsonar.projectName=$JOB_NAMEt \
+                -Dsonar.projectName=$JOB_NAME \
                 -Dsonar.sources=/var/lib/jenkins/workspace/$JOB_NAME"
                 }
             }
