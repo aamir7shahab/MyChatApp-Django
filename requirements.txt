@@ -1,7 +1,7 @@
 aioredis==1.2.0
 asgiref==2.3.2
 asn1crypto==0.24.0
-attrs==18.2.0
+attrs==19.2.0
 autobahn==19.1.1
 certifi==2018.11.29
 cffi==1.11.5
@@ -23,7 +23,7 @@ hyperlink==18.0.0
 idna==2.8
 incremental==17.5.0
 jwt==0.5.4
-msgpack==0.6.1
+msgpack==0.5.2
 oauthlib==3.0.1
 plumber==1.5
 psycopg2==2.7.7

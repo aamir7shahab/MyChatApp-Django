@@ -1,0 +1,3 @@
+POSTGRES_USER=aamirshahab
+POSTGRES_PASSWORD=mypassword
+POSTGRES_DB=database
