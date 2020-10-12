@@ -6,7 +6,7 @@ services:
     build: .
     volumes:
       - .:/opt/MyChatApp-Django
-      - static_volume:/opt/MyChatApp-Django/fundoo/static  # <-- bind the static volume
+      - static_volume:/opt/MyChatApp-Django/fundoo/static  
     networks:
       - nginx_network
       - database_network
@@ -19,15 +19,15 @@ services:
       - 80:80
     volumes:
       - ./config/nginx/conf.d:/etc/nginx/conf.d
-      - static_volume:/opt/MyChatApp-Django/fundoo/static  # <-- bind the static volume
+      - static_volume:/opt/MyChatApp-Django/fundoo/static 
     depends_on:
       - djangoapp
     networks:
       - nginx_network
 
-  database:  # <-- IMPORTANT: same name as in DATABASES setting, otherwise Django won't find the database
+  database:
     image: postgres:10
-    env_file:  # <-- we use the previously defined values
+    env_file:
       - config/db/database_env
     networks:  # <-- connect to the bridge
       - database_network
@@ -35,11 +35,11 @@ services:
       - database_volume:/var/lib/postgresql/data
 
 networks:
-  nginx_network:    # <-- add the nginx bridge
+  nginx_network:
     driver: bridge
-  database_network:  # <-- add the database bridge
+  database_network:
     driver: bridge
 
-volumes:            # <-- to make database persistent
+volumes:           
   database_volume:
-  static_volume:  # <-- declare the static volume
+  static_volume: 
