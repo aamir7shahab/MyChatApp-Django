@@ -16,7 +16,8 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  soanrcloud:
+    name: Sonar Cloud Analysis
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -27,7 +28,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          
+
       # Sonar Cloud Scan
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
