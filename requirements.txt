@@ -9,10 +9,10 @@ channels==2.1.7
 channels-redis==2.3.1
 chardet==3.0.4
 constantly==15.1.0
-cryptography==2.5
+cryptography==42.0.0
 daphne==2.2.5
 defusedxml==0.5.0
-Django==2.1.5
+Django==2.1.15
 django-allauth==0.38.0
 django-rest-auth==0.9.3
 djangorestframework==3.7.7
@@ -38,7 +38,8 @@ requests==2.21.0
 requests-oauthlib==1.2.0
 six==1.12.0
 tqdm==4.31.1
-Twisted==18.9.0
+Twisted==23.10.0rc1
 txaio==18.8.1
 urllib3==1.24.1
-websockets==7.0
+websockets==10.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
