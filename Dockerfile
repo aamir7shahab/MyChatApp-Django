@@ -1,5 +1,5 @@
 # start from an official image
-FROM python:3.6
+FROM python:3.9.0rc1
 
 # create and set working directory
 RUN mkdir -p /opt/MyChatApp-Django
